@@ -28,6 +28,15 @@ const ProcessSection = () => {
   return (
     <section className="process-section">
       <div className="process-container">
+        <div className="process-header">
+          <div className="process-header-image">
+            <img 
+              src="/assets/ai-generated-IMAGE.jpg" 
+              alt="AI Code Generation"
+            />
+          </div>
+        </div>
+        
         <h2 className="process-main-title">From Idea to Deployment</h2>
         <p className="process-subtitle">Turn your business concepts into reality with our AI-driven development lifecycle.</p>
         

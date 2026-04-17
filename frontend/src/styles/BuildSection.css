@@ -1,5 +1,5 @@
 .build-section {
-  background-color: #353535;
+  background-color: #2B2B2B;
   padding: 9rem 2rem;
   animation: fadeIn 1s ease-out;
 }
@@ -8,9 +8,32 @@
   max-width: 1250px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 5rem;
   align-items: center;
+}
+
+.build-content {
+  padding: 2rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.build-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.build-description {
+  font-size: 1.3rem;
+  color: #D8D8D8;
+  line-height: 1.8;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
 }
 
 .build-image {
@@ -20,7 +43,7 @@
   overflow: hidden;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
-  animation: slideInLeft 1s ease-out;
+  animation: slideInRight 1s ease-out;
 }
 
 .build-image img {
@@ -37,33 +60,6 @@
 
 .build-image:hover img {
   transform: scale(1.08);
-}
-
-.build-content {
-  padding: 2rem;
-  animation: slideInRight 1s ease-out;
-}
-
-.build-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #C9A961 0%, #B8956A 50%, #A8825A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 2rem;
-  line-height: 1.25;
-  letter-spacing: -1.5px;
-  font-family: 'Raleway', sans-serif;
-  filter: drop-shadow(0 3px 10px rgba(201, 169, 97, 0.25));
-}
-
-.build-description {
-  font-size: 1.3rem;
-  color: #E0E0E0;
-  line-height: 1.8;
-  font-family: 'Avenir', sans-serif;
-  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
