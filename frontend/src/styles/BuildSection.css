@@ -1,72 +1,88 @@
 .build-section {
-  background-color: #2a2a2a;
-  padding: 8rem 2rem;
+  background-color: #353535;
+  padding: 9rem 2rem;
+  animation: fadeIn 1s ease-out;
 }
 
 .build-container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
   align-items: center;
 }
 
 .build-image {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+  animation: slideInLeft 1s ease-out;
 }
 
 .build-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.build-image:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .build-image:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .build-content {
   padding: 2rem;
+  animation: slideInRight 1s ease-out;
 }
 
 .build-title {
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #C9A961 0%, #B8956A 100%);
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #C9A961 0%, #B8956A 50%, #A8825A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  font-family: 'Raleway', sans-serif;
+  filter: drop-shadow(0 3px 10px rgba(201, 169, 97, 0.25));
 }
 
 .build-description {
-  font-size: 1.2rem;
-  color: #d0d0d0;
-  line-height: 1.7;
+  font-size: 1.3rem;
+  color: #E0E0E0;
+  line-height: 1.8;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
   .build-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
   }
   
   .build-section {
-    padding: 5rem 1.5rem;
+    padding: 6rem 2rem;
   }
-  
+}
+
+@media (max-width: 768px) {
   .build-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .build-description {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 }
