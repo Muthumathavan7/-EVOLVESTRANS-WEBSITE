@@ -41,7 +41,7 @@
 .logo {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease;
+  height: 80px; /* increase navbar height */
 }
 
 .logo:hover {
@@ -49,11 +49,12 @@
 }
 
 .logo-img {
-  height: 50px;
-  width: auto;
+  height: 80px;     /* control height only */
+  width: auto;      /* keep ratio */
+  transform: scale(1.8); /* 🔥 force bigger visually */
+  transform-origin: left center;
   object-fit: contain;
   filter: drop-shadow(0 3px 10px rgba(184, 149, 106, 0.4));
-  transition: filter 0.3s ease;
 }
 
 .logo-img:hover {
