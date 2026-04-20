@@ -31,9 +31,9 @@ const fadeUp = {
 const HeroSection = () => {
   return (
     <section
-      id="home"
-      className="bg-[#1e1f23] text-white min-h-screen flex items-center overflow-hidden"
-    >
+  id="home"
+  className="bg-[#1e1f23] text-white min-h-screen flex items-start overflow-hidden pt-32 md:pt-36"
+>
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 w-full">
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="overflow-hidden">
               <motion.h1
                 variants={maskReveal}
-                className="text-[42px] md:text-[72px] font-bold leading-[1.05] mb-6"
+                className="text-[42px] md:text-[72px] font-bold leading-[1.05] mb-10 md:mb-12"x
               >
                 Build <br />
                 Production <br />
