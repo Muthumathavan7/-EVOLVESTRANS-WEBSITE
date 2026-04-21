@@ -61,7 +61,7 @@ const Footer = () => {
               src="/assets/Evolves Logo/EVOLVESTRANS.png"
               alt="Evolves"
               whileHover={{ scale: 1.05 }}
-              className="h-40 w-40 object-contain"
+              className="h-40 sm:h-28 md:h-40 lg:h-48 w-auto object-contain"
             />
           </motion.div>
 

@@ -47,6 +47,7 @@ const Header = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          height: 80px;
         }
 
         .logo-img {
@@ -116,8 +117,8 @@ const Header = () => {
           }
 
           .logo-img {
-            height: 130px;
-            width: 130ox;
+            height: 250px;
+            width: 260ox;
           }
 
           .mobile-menu {
