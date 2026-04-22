@@ -112,21 +112,22 @@ const Header = () => {
           .header-container {
             flex-direction: row;
             justify-content: space-between;
-            height: 40px;
+            height: 70px;
             // margin-bottom: 0px;
           }
 
           .logo-img {
-            height: 250px;
-            width: 260ox;
-          }
+            height: 200px;
+            width: 200ox;
+            margin-left: -25px;         
+            }
 
           .mobile-menu {
             display: flex;
             flex-direction: column;
-            background: #1e1f23;
+            background: #FFFFFF;
             padding: 20px;
-            gap: 15px;
+            gap: 10px;
           }
 
           .mobile-menu button {
