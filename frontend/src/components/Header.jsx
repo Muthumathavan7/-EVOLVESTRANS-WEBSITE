@@ -117,8 +117,8 @@ const Header = () => {
           }
 
           .logo-img {
-            height: 200px;
-            width: 200ox;
+            height: 180px;
+            width: 180px;
             margin-left: -25px;         
             }
 
