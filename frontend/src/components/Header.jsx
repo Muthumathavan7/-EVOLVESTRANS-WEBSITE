@@ -186,9 +186,14 @@ const Header = () => {
             <button onClick={() => scrollToSection('home')}>Home</button>
             <button onClick={() => scrollToSection('features')}>Features</button>
             <button onClick={() => scrollToSection('pricing')}>Plans & Pricing</button>
-            <button onClick={() => scrollToSection('contact')} className="mobile-btn">
-              Start Building
-            </button>
+            <a
+  href="https://app.evolves.world"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mobile-btn"
+>
+  Start Building
+</a>
           </div>
         )}
 
